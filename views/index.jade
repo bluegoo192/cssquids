@@ -1,5 +1,50 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  .screen
+    #name
+      h1 CS Squids
+      p#cinfo.
+        A group of passionate computer science students at UCSB
+    .center.content
+      ul#descriptions.flex-container
+        li Arthur
+        li Eric
+        li Dong
+        li Henry
+        li Maggie
+    #sticky-anchor
+    #navbar.flex-container
+      li
+        a(href='#') About
+      li
+        a(href='#') Projects
+      li
+        a(href='#') Contact
+      li
+        a(href='#') Squid
+  .pxdivider
+  .pxdivider
+  .pxdivider
+  .flex-container
+    article
+      p.
+        Hi, welcome to our site.  We are the five greatest programmers you will
+        ever meet.  That is not an exaggeration.  Please hire us.
+      p.
+        Though we all have our own specializations, from games programming to
+        full-stack web development, we share a talent for:
+    #summary
+      ul
+        li
+          h4 Data structures and algorithms with C++
+        li
+          h4 Advanced applications programming in Java
+        li
+          h4 Assembly programming with RISC instruction sets
+        li
+          h4 Passing our classes.  Can you guess what they are?
+  .pxdivider
+  .pxdivider
+  footer
+    p.center Copyright 2016, or something
